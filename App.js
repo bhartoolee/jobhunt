@@ -1,11 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Category from './source/category';
+import User from './source/user'
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* <Category /> */}
+      <User
+      apply='13'
+      job='PR manager'
+      area='IT depertment'
+      date='2'
+      amount='13'
+      />
     </View>
   );
 }
@@ -13,8 +22,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // width: '100%',
+    // alignItems: 'center',
   },
 });
